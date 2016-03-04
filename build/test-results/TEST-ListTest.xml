@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ListTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2016-03-03T15:51:23" hostname="INV-6179" time="0.011">
+<testsuite name="ListTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2016-03-04T11:21:57" hostname="INV-8445" time="0.141">
   <properties/>
-  <testcase name="testGet" classname="ListTest" time="0.002"/>
-  <testcase name="testSet" classname="ListTest" time="0.0"/>
-  <testcase name="testClear" classname="ListTest" time="0.0"/>
-  <testcase name="testGetSizeForTwoElements" classname="ListTest" time="0.003"/>
-  <testcase name="testRemoveFirst" classname="ListTest" time="0.0"/>
+  <testcase name="testContainsWhileHasElement" classname="ListTest" time="0.002"/>
+  <testcase name="testGetAfterRemoveElementOfThisIndex" classname="ListTest" time="0.0"/>
+  <testcase name="testSetPositiveChange" classname="ListTest" time="0.0"/>
+  <testcase name="testContainsAfterAddElement" classname="ListTest" time="0.0"/>
+  <testcase name="testGetWhileElementIsCorrect" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeAfterAddTwoSame" classname="ListTest" time="0.0"/>
+  <testcase name="testIsEmptyWhenHasElements" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeForTwoElements" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeForEmptyList" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeAfterRemoveFirst" classname="ListTest" time="0.001"/>
+  <testcase name="testIsEmptyWhenHasNoElements" classname="ListTest" time="0.0"/>
+  <testcase name="testContainsAfterRemoveElement" classname="ListTest" time="0.0"/>
+  <testcase name="testIsEmptyAfterClearList" classname="ListTest" time="0.001"/>
   <testcase name="testGetSizeForSameElements" classname="ListTest" time="0.0"/>
-  <testcase name="testContains" classname="ListTest" time="0.0"/>
-  <testcase name="testAddOneElement" classname="ListTest" time="0.0"/>
-  <testcase name="testAddTwoSame" classname="ListTest" time="0.0"/>
-  <testcase name="testGetSizeForHundredElements" classname="ListTest" time="0.0"/>
-  <testcase name="testRemoveElement" classname="ListTest" time="0.001"/>
-  <testcase name="testIsEmpty" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeAfterClearList" classname="ListTest" time="0.0"/>
+  <testcase name="testGetWhileIndexGreaterThanSize" classname="ListTest" time="0.001"/>
+  <testcase name="testGetSizeAfterAddManyElementsAndRemoveOneOfThem" classname="ListTest" time="0.0"/>
+  <testcase name="testContainsWhileHasNotElement" classname="ListTest" time="0.001"/>
+  <testcase name="testGetWhileIndexNegative" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeForTenThousandElements" classname="ListTest" time="0.13"/>
+  <testcase name="testGetSizeAfterAddOneElement" classname="ListTest" time="0.0"/>
+  <testcase name="testIsEmptyAfterAddElementsToEmptyList" classname="ListTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
