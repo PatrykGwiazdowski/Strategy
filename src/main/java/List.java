@@ -1,34 +1,28 @@
-import Interfaces.ListInterface;
 
 /**
  * Created by INV-6179 on 03.03.2016.
  */
-public class List<E> extends ListAbstract<E> {
+public class List<E> extends AbstractClasses.List<E> {
+    Node<E> head;
 
-    private Node<E> head;
-
-    /**
-     * Creates new empty List
-     */
     public List(){
-        head=new Node();
+        head=new Node<>();
         size=0;
     }
-
     /**
      * Adds element to end of the List
      * @param o Element to be added
      */
     public void addElement(E o) {
         if(size==0){
-            head.element=o;
+            head.setData(o);
         }else{
 
-            Node tmpNode=head;
-            while (tmpNode.nextNode!=null){
-                tmpNode=tmpNode.nextNode;                //interate to end of the list
+            Node<E> tmpNode=head;
+            while (tmpNode.getNextNode()!=null){
+                tmpNode=tmpNode.getNextNode();                //interate to end of the list
             }
-            tmpNode.nextNode=new Node(o,tmpNode,null);
+            tmpNode.setNextNode(new Node(o,null));
         }
         size++;
     }
@@ -42,8 +36,8 @@ public class List<E> extends ListAbstract<E> {
             removeFirst();
         }
         if(index>0){
-            Node tmpNode=getNode(index);
-            tmpNode.previousNode.nextNode=tmpNode.nextNode;
+            Node tmpNode=getNode(index-1);
+            tmpNode.setNextNode(tmpNode.getNextNode().getNextNode());
             size--;
         }
     }
@@ -54,8 +48,7 @@ public class List<E> extends ListAbstract<E> {
      */
     public void removeFirst(){
         Node tmpNode=head;
-        head=tmpNode.nextNode;
-        head.previousNode=null;
+        tmpNode.setNextNode(head);
         size--;
     }
 
@@ -93,10 +86,10 @@ public class List<E> extends ListAbstract<E> {
     public boolean contains(E o) {
         Node tmpNode=head;
         for(int i=0;i<size;i++){
-            if(tmpNode.element.equals(o)){
+            if(tmpNode.getNextNode().equals(o)){
                 return true;
             }
-            tmpNode=tmpNode.nextNode;
+            tmpNode=tmpNode.getNextNode();
         }
         return false;
     }
@@ -109,7 +102,7 @@ public class List<E> extends ListAbstract<E> {
      */
     @Override
     public E get(int index) {                                   //TODO something is wrong here
-        return (E) getNode(index).element;                      //List element at specified index
+        return (E) getNode(index).getData();                      //List element at specified index
     }
 
 
@@ -122,10 +115,11 @@ public class List<E> extends ListAbstract<E> {
     public void set(int index, E o) {
         Node tmpNode=head;
         for(int i=0;i<index;i++){       //iterate to specified node
-            tmpNode=tmpNode.nextNode;
+            tmpNode=tmpNode.getNextNode();
         }
-        tmpNode.element=o;                  //switch current List Element with given as parameter
+        tmpNode.setData(o);                  //switch current List Element with given as parameter
     }
+
 
     /**
      *
@@ -136,8 +130,9 @@ public class List<E> extends ListAbstract<E> {
     private Node getNode(int index) {
         Node tmpNode=head;
         for(int i=0;i<index;i++){           //iterate through all nodes to specified index
-            tmpNode=tmpNode.nextNode;
+            tmpNode=tmpNode.getNextNode();
         }
         return tmpNode;             //node at specified index
     }
+
 }
