@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ListTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2016-03-03T15:51:23" hostname="INV-6179" time="0.011">
+<testsuite name="ListTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2016-03-04T12:06:31" hostname="INV-6179" time="0.253">
   <properties/>
   <testcase name="testGet" classname="ListTest" time="0.002"/>
-  <testcase name="testSet" classname="ListTest" time="0.0"/>
+  <testcase name="testSet" classname="ListTest" time="0.001"/>
   <testcase name="testClear" classname="ListTest" time="0.0"/>
-  <testcase name="testGetSizeForTwoElements" classname="ListTest" time="0.003"/>
+  <testcase name="testGetSizeForTwoElements" classname="ListTest" time="0.004"/>
   <testcase name="testRemoveFirst" classname="ListTest" time="0.0"/>
-  <testcase name="testGetSizeForSameElements" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeForSameElements" classname="ListTest" time="0.001"/>
   <testcase name="testContains" classname="ListTest" time="0.0"/>
   <testcase name="testAddOneElement" classname="ListTest" time="0.0"/>
   <testcase name="testAddTwoSame" classname="ListTest" time="0.0"/>
-  <testcase name="testGetSizeForHundredElements" classname="ListTest" time="0.0"/>
-  <testcase name="testRemoveElement" classname="ListTest" time="0.001"/>
+  <testcase name="testRemoveElement" classname="ListTest" time="0.0"/>
   <testcase name="testIsEmpty" classname="ListTest" time="0.0"/>
+  <testcase name="testGetSizeFor10000Elements" classname="ListTest" time="0.239"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
