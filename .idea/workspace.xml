@@ -95,7 +95,7 @@
       <file leaf-file-name="ListTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9738431">
+            <state vertical-scroll-proportion="7.748491">
               <caret line="177" column="58" selection-start-line="177" selection-start-column="58" selection-end-line="177" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -946,7 +946,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1217,7 +1217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9738431">
+        <state vertical-scroll-proportion="7.748491">
           <caret line="177" column="58" selection-start-line="177" selection-start-column="58" selection-end-line="177" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
