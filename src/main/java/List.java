@@ -1,8 +1,10 @@
+import Interfaces.ListInterface;
+
 /**
  * Created by INV-6179 on 03.03.2016.
  */
-public class List<E> implements ListInterface<E> {
-    private int size;
+public class List<E> extends ListAbstract<E> {
+
     private Node<E> head;
 
     /**
@@ -17,8 +19,6 @@ public class List<E> implements ListInterface<E> {
      * Adds element to end of the List
      * @param o Element to be added
      */
-
-    @Override
     public void addElement(E o) {
         if(size==0){
             head.element=o;
@@ -37,7 +37,6 @@ public class List<E> implements ListInterface<E> {
      * Removes element at specified index in List
      * @param index Index of element to be Removed
      */
-    @Override
     public void removeElement(int index) {
         if(index==0){
             removeFirst();
@@ -63,7 +62,6 @@ public class List<E> implements ListInterface<E> {
     /**
      * Remove all elements from List. After Calling this list size is 0
      */
-    @Override
     public void clear() {
         /*Node tmpNode=head;
         for(int i=0;i<size;i++){
@@ -91,7 +89,7 @@ public class List<E> implements ListInterface<E> {
      * @param o List element to check
      * @return  true if list contains specified element
      */
-    @Override
+
     public boolean contains(E o) {
         Node tmpNode=head;
         for(int i=0;i<size;i++){
@@ -114,6 +112,7 @@ public class List<E> implements ListInterface<E> {
         return (E) getNode(index).element;                      //List element at specified index
     }
 
+
     /**
      * replaces value at specified index of list
      * @param index index of element to replace
@@ -126,15 +125,6 @@ public class List<E> implements ListInterface<E> {
             tmpNode=tmpNode.nextNode;
         }
         tmpNode.element=o;                  //switch current List Element with given as parameter
-    }
-
-    /**
-     * returns current size of List
-     * @return size of List
-     */
-    @Override
-    public int getSize() {
-        return size;                        //current size of List
     }
 
     /**
